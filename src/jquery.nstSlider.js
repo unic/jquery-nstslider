@@ -1110,14 +1110,14 @@
 
             // unbind events bound to the container element
             $this.parent()
-                .unbind('mousedown.nstSlider')
                 .unbind('touchstart.nstSlider')
                 .unbind('touchmove.nstSlider')
                 .unbind('touchend.nstSlider');
             
             // unbind events bound to the current element
             $this.unbind('keydown.nstSlider')
-                .unbind('keyup.nstSlider');
+                .unbind('keyup.nstSlider')
+                .unbind('mousedown.nstSlider');
 
             return $this;
         },

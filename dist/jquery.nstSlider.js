@@ -1,6 +1,6 @@
-/*! Nestoria Slider - v1.0.13 - 2015-07-16
+/*! Nestoria Slider - v1.0.13 - 2017-02-07
 * http://lokku.github.io/jquery-nstslider/
-* Copyright (c) 2015 Lokku Ltd.; Licensed MIT */
+* Copyright (c) 2017 Lokku Ltd.; Licensed MIT */
 (function($) {
     /* 
      * These are used for user interaction. This plugin assumes the user can
@@ -1106,14 +1106,14 @@
 
             // unbind events bound to the container element
             $this.parent()
-                .unbind('mousedown.nstSlider')
                 .unbind('touchstart.nstSlider')
                 .unbind('touchmove.nstSlider')
                 .unbind('touchend.nstSlider');
             
             // unbind events bound to the current element
             $this.unbind('keydown.nstSlider')
-                .unbind('keyup.nstSlider');
+                .unbind('keyup.nstSlider')
+                .unbind('mousedown.nstSlider');
 
             return $this;
         },
